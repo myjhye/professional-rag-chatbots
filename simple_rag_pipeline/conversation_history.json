@@ -1,0 +1,114 @@
+[
+  {
+    "timestamp": "2025-07-03T20:48:16.879415",
+    "query": "가장 비싼 테슬라는 무엇인가요?",
+    "answer": "가장 비싼 테슬라는 Tesla Model Y로, 가격은 $149,052.60입니다.",
+    "metadata": {
+      "processing_time": 3.4629006385803223,
+      "total_tokens": 35,
+      "sources_count": 4
+    },
+    "sources": [
+      {
+        "content": "Model: Tesla Model Y\n                            Color: Midnight Silver\n                            Fuel Type: Electric\n                            Transmission: Automatic\n                            Price: $149,052.60\n                            Manufacture Date: 2024-01-06\n                            Sale Date: 2024-01-07\n                            State: Texas\n                            Mileage: 335.6 miles",
+        "metadata": {
+          "source": "tesla_motors_data",
+          "model": "Tesla Model Y",
+          "color": "Midnight Silver",
+          "state": "Texas",
+          "price": 149052.6,
+          "mileage": 335.6
+        }
+      },
+      {
+        "content": "Model: Tesla Roadster\n                            Color: Blue\n                            Fuel Type: Electric\n                            Transmission: Automatic\n                            Price: $129,835.03\n                            Manufacture Date: 2024-06-19\n                            Sale Date: 2024-07-18\n                            State: Illinois\n                            Mileage: 358.4 miles",
+        "metadata": {
+          "source": "tesla_motors_data",
+          "model": "Tesla Roadster",
+          "color": "Blue",
+          "state": "Illinois",
+          "price": 129835.03,
+          "mileage": 358.4
+        }
+      },
+      {
+        "content": "Model: Tesla Roadster\n                            Color: Blue\n                            Fuel Type: Electric\n                            Transmission: Automatic\n                            Price: $111,379.04\n                            Manufacture Date: 2024-07-02\n                            Sale Date: 2024-08-07\n                            State: California\n                            Mileage: 374.2 miles",
+        "metadata": {
+          "source": "tesla_motors_data",
+          "model": "Tesla Roadster",
+          "color": "Blue",
+          "state": "California",
+          "price": 111379.04,
+          "mileage": 374.2
+        }
+      },
+      {
+        "content": "Model: Tesla Model Y\n                            Color: Midnight Silver\n                            Fuel Type: Electric\n                            Transmission: Automatic\n                            Price: $75,166.82\n                            Manufacture Date: 2024-03-03\n                            Sale Date: 2024-05-22\n                            State: Texas\n                            Mileage: 264.7 miles",
+        "metadata": {
+          "source": "tesla_motors_data",
+          "model": "Tesla Model Y",
+          "color": "Midnight Silver",
+          "state": "Texas",
+          "price": 75166.82,
+          "mileage": 264.7
+        }
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-03T20:49:11.889866",
+    "query": "Model 3와 Cybertruck의 가격 차이는?",
+    "answer": "제공된 컨텍스트에는 Tesla Model 3에 대한 정보가 포함되어 있지 않습니다. 따라서 Model 3와 Cybertruck의 가격 차이를 계산할 수 없습니다. Cybertruck의 가격 정보만 제공되어 있습니다.",
+    "metadata": {
+      "processing_time": 2.5861847400665283,
+      "total_tokens": 58,
+      "sources_count": 4
+    },
+    "sources": [
+      {
+        "content": "Model: Tesla Cybertruck\n                            Color: Silver\n                            Fuel Type: Electric\n                            Transmission: Automatic\n                            Price: $109,072.68\n                            Manufacture Date: 2024-05-30\n                            Sale Date: 2024-06-13\n                            State: California\n                            Mileage: 365.7 miles",
+        "metadata": {
+          "source": "tesla_motors_data",
+          "model": "Tesla Cybertruck",
+          "color": "Silver",
+          "state": "California",
+          "price": 109072.68,
+          "mileage": 365.7
+        }
+      },
+      {
+        "content": "Model: Tesla Cybertruck\n                            Color: Silver\n                            Fuel Type: Electric\n                            Transmission: Automatic\n                            Price: $38,056.79\n                            Manufacture Date: 2024-03-23\n                            Sale Date: 2024-05-16\n                            State: Illinois\n                            Mileage: 387.9 miles",
+        "metadata": {
+          "source": "tesla_motors_data",
+          "model": "Tesla Cybertruck",
+          "color": "Silver",
+          "state": "Illinois",
+          "price": 38056.79,
+          "mileage": 387.9
+        }
+      },
+      {
+        "content": "Model: Tesla Cybertruck\n                            Color: Black\n                            Fuel Type: Electric\n                            Transmission: Automatic\n                            Price: $93,531.95\n                            Manufacture Date: 2024-08-30\n                            Sale Date: 2024-11-26\n                            State: Massachusetts\n                            Mileage: 321.0 miles",
+        "metadata": {
+          "source": "tesla_motors_data",
+          "model": "Tesla Cybertruck",
+          "color": "Black",
+          "state": "Massachusetts",
+          "price": 93531.95,
+          "mileage": 321.0
+        }
+      },
+      {
+        "content": "Model: Tesla Cybertruck\n                            Color: Silver\n                            Fuel Type: Electric\n                            Transmission: Automatic\n                            Price: $83,793.92\n                            Manufacture Date: 2024-07-06\n                            Sale Date: 2024-08-27\n                            State: Massachusetts\n                            Mileage: 268.3 miles",
+        "metadata": {
+          "source": "tesla_motors_data",
+          "model": "Tesla Cybertruck",
+          "color": "Silver",
+          "state": "Massachusetts",
+          "price": 83793.92,
+          "mileage": 268.3
+        }
+      }
+    ]
+  }
+]
