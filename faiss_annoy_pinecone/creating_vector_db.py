@@ -137,17 +137,24 @@ class VectorSearchEngine:
             raise ValueError("인덱스가 초기화되지 않았습니다. create_index()를 먼저 호출하세요.")
         
         logger.info(f"🔄 {len(documents)}개 문서의 임베딩 생성 시작")
+        
+        # 1. 문서 내용만 뽑기
         texts = [doc['content'] for doc in documents]
+
+        # 2. 벡터화 (embedding)
         embeddings = self.embed_texts(texts)
         
         logger.info(f"📐 생성된 임베딩 정보: 개수={len(embeddings)}, 차원={len(embeddings[0]) if embeddings else 0}")
         
         # 배치로 처리
         total_inserted = 0
+
+        # 3. 배치 단위 반복
         for i in range(0, len(documents), batch_size):
             batch_docs = documents[i:i + batch_size]
             batch_embeddings = embeddings[i:i + batch_size]
             
+            # 4. 벡터 포장
             vectors = []
             for j, (doc, embedding) in enumerate(zip(batch_docs, batch_embeddings)):
                 vector_id = doc.get('id', f"doc_{i+j}")
@@ -167,6 +174,7 @@ class VectorSearchEngine:
             
             logger.info(f"💾 배치 {i//batch_size + 1}: {len(vectors)}개 벡터 삽입 중...")
             
+            # 5. 벡터 DB에 저장
             try:
                 upsert_response = self.index.upsert(vectors=vectors)
                 logger.info(f"✅ 배치 {i//batch_size + 1} 삽입 응답: {upsert_response}")
@@ -500,7 +508,7 @@ class AdvancedRAGSystem(RAGSystem):
         dimension = sample_embedding.shape[1]
         logger.info(f"📐 임베딩 차원: {dimension}")
         
-        # 인덱스 생성 및 문서 삽입
+        # 인덱스 생성 및 문서 삽입l
         self.search_engine.create_index(index_name, dimension)
         
         # 삽입 전 인덱스 상태 확인
